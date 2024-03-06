@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=YourFontName&display=swap');
+
+body {
+    background-image: url('../../assets/background/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    font-size: 300px;
+    margin: 320px 40px;
+    color: white;
+    text-shadow: 4px 4px 2px rgb(0, 0, 0);
+    font-family: 'MedievalSharp', cursive;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 100px;
+    margin: 40px;
+    color: white;
+    text-shadow: 4px 4px 2px rgb(2, 2, 2);
+    font-family: 'MedievalSharp', cursive;
+
+}
+
+h3 {
+    text-align: justify;
+    width: 60%;
+    font-size: 25px;
+    margin: 10px;
+    color: white;
+    /*set shadow to the text*/
+    text-shadow: 4px 4px 2px rgb(2, 2, 2);
+    font-family: 'MedievalSharp', cursive;
+}
+
+.lore > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.news-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}

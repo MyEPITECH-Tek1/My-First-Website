@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=YourFontName&display=swap');
+
+body {
+    background-image: url('../../assets/background/background_flou.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    display: grid;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    text-align: center;
+    text-decoration: underline;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.cards_container {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    gap: 50px;
+    padding: 20px;
+    
+}
+
+.card {
+    flex: 0 0 auto;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 150px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.9s ease-in-out;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.image {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border-radius: auto;
+}
+
+.attributes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.attribute {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.attribute_data {
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.attribute-icon {
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .cards_container {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        justify-content: center;
+    }
+    
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
